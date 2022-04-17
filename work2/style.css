@@ -1,0 +1,391 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*CSS Reset END*/
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.header, .nav, .banner, .hbox, .vbox, .contact, .footer {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 28px;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.line {
+    margin: 0px 8px;
+}
+
+.fb, .fb a {
+    text-decoration: none;
+    color: #4460a0;
+    font-weight: 400;
+}
+
+.twitter, .twitter a {
+    text-decoration: none;
+    color: #21b4ed;
+    font-weight: 400;
+}
+
+.fb img, .twitter img {
+    width: 16px;
+    height: 16px;
+}
+
+.nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 7px 20px;
+}
+
+.menu {
+    display: flex;
+    font-size: 14px;
+    text-align: center;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: #22d3a7;
+    font-size: 15px;
+    padding: 20px 10px;
+    margin: 0px 10px;
+}
+
+.menu a:hover {
+    color: #0c0c0c;
+}
+
+.menu ul {
+    display: none;
+    float: left;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li:hover ul {
+    background-color: #22d3a7;
+    display: inline;
+    position: absolute;
+    top: 55px;
+    left: 0px;
+    z-index: 10;
+}
+
+.menu li ul li a {
+    color: white;
+}
+
+.active {
+    border-bottom: #22d3a7 4px solid;
+}
+
+
+
+.banner h1 {
+    display: flex;
+    align-items: center;
+    height: 160px;
+    width: 100%;
+    background-image: linear-gradient(to right, #252422, transparent);
+    font-size: 36px;
+    padding: 0px 25px;
+    line-height: 45px;
+}
+
+.card {
+    width: 300px;
+    height: 330px;
+    box-shadow: 1px 1px 3px gray;
+    margin: 65px 0px;
+}
+
+.pack {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 180px;
+}
+
+.card h3 {
+    text-align: center;
+    font-size: 18px;
+}
+
+.card .info {
+    text-align: justify;
+    line-height: 20px;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.card ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    text-indent: 5px;
+}
+
+.hbox {
+    display: flex;
+    justify-content: space-around;
+}
+
+.vbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vbox h2 {
+    font-size: 24px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+table {
+    margin-top: 30px;
+    width: 840px;
+    text-align: left;
+    font-size: 15px;
+    line-height: 36px;
+}
+
+th, td {
+    padding: 2px 22px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+th {
+    padding: 2px 22px;
+    background-color: #f7f7f7;
+    font-weight: 500;
+}
+
+.item {
+    font-weight: 500;
+}
+
+.win {
+    color: #00a67d;
+    font-weight: 500;
+}
+
+.contact {
+    margin-top: 61px;
+    background-image: linear-gradient(0deg,
+            #009872 0%,
+            #00644b 100%);
+}
+
+.contact h2 {
+    padding-top: 38px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 36px;
+    color: #ffffff;
+}
+
+.form {
+    display: flex;
+}
+
+.form textarea {
+    box-sizing: border-box;
+    width: 460px;
+    height: 245px;
+    margin: 20px 30px;
+    padding: 20px;
+    resize: none;
+}
+
+.form .info {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    margin: 20px 0px;
+    color: #f6f6f6;
+}
+
+.info input {
+    border-radius: 3px;
+    border: solid 1px #e1e1e1;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.btn {
+    width: 70px;
+    background-color: #00cc99;
+    color: white;
+    border-radius: 3px;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2a2b2b;
+    color: white;
+    cursor: pointer;
+}
+
+.left {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+.footerLogo {
+    margin: 26px 20px;
+}
+
+.contactUs {
+    margin: 28px 15px;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.contactUs a {
+    text-decoration: none;
+    color: #e12d80;
+}
+
+.card:hover {
+    background-color: #dddddd;
+    cursor: pointer;
+}
+
+.goTop {
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+}
+
+/*swiper*/
+.swiper-container {
+    width: 1000px;
+    height: 345px;
+}
+
+.swiper-slide {
+
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    background-image: url('https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png');
+    height: 345px;
+    color: white;
+}
+
+.bannerImg1 {
+    background-image: url('https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png');
+}
+
+.bannerImg2 {
+    background-image: url('https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_course.png');
+}
+
+.bannerImg3 {
+    background-image: url('https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_QA.png');
+}

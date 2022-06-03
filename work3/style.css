@@ -940,4 +940,8 @@ button:hover {
     .itemBox li {
         width: 90%;
     }
+
+    .banner {
+        background-image: url('./assets/header_mobile.png');
+    }
 }

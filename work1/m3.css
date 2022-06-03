@@ -1,0 +1,153 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*CSS Reset END*/
+
+
+*, body {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 24px;
+    margin: 16px 8px;
+    background: #D8E6CB;
+    color: #293421;
+    border-radius: 100px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.green {
+    color: white;
+    background-color: #386A20;
+}
+
+.green:hover {
+    color: white;
+    background-color: #386A20;
+    opacity: 0.8;
+}
+
+.outline {
+    color: #386A20;
+    background-color: white;
+    border: 1px solid;
+}
+
+.outline:hover {
+    color: #386A20;
+    background-color: #D8E6CB;
+    border: 1px solid;
+}
+
+.card {
+    display: inline-block;
+    /* border: 1px solid #c4c0c9; */
+    box-shadow: 1px 1px 2px 2px #cccccc;
+    background-color: #FCFCF5;
+    border-radius: 12px;
+    width: 360px;
+    margin: 16px 8px;
+}
+
+.header {
+    display: flex;
+}
+
+.head {
+    /*大頭貼*/
+    border-radius: 50%;
+    color: white;
+    background-color: #6750A4;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 16px;
+}
+
+.personal {
+    margin: 12px 0px;
+}
+
+.personal h1 {
+    font-weight: bold;
+    line-height: 28px;
+}
+
+.info {
+    padding: 16px;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.subhead {
+    font-size: 16px;
+    line-height: 36px;
+}
+
+.group {
+    display: flex;
+    justify-content: end;
+}

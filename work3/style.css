@@ -181,6 +181,7 @@ html {
     height: 420px;
     background-image: url('./assets/header_desktop.png');
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .highLight {
@@ -943,5 +944,6 @@ button:hover {
 
     .banner {
         background-image: url('./assets/header_mobile.png');
+
     }
 }
